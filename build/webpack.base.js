@@ -23,13 +23,13 @@ module.exports = {
     module: {
         rules: [
             {
-                test: /\.js[x]?$/,
+                test: /\.js$/,
                 exclude: /node_modules/,
                 use: [
                     {
-                        loaders: ['react-hot','babel'],
+                        loader: 'babel-loader',
                         options: {
-                            presets: ['env']
+                            presets: ['env', 'react']
                         }
                     }
                 ]
