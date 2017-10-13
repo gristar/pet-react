@@ -7,6 +7,7 @@ import Tabs, { Tab } from 'material-ui/Tabs';
 import ImgSwiper from '../../components/imgsSwiper';
 import SecondNav from './SecondNav';
 import Divider from 'material-ui/Divider';
+import List from './List';
 
 function TabContainer({ children, dir }) {
     return (
@@ -79,6 +80,7 @@ class FullWidthTabs extends React.Component {
                         <ImgSwiper/>
                         <SecondNav/>
                         <Divider style={{height:8,backgroundColor:'rgba(0, 0, 0, 0.04)'}}/>
+                        <List/>
                     </TabContainer>
                     <TabContainer dir={theme.direction}>Item Two</TabContainer>
                     <TabContainer dir={theme.direction}>Item Three</TabContainer>
