@@ -4,10 +4,13 @@ import { withStyles } from 'material-ui/styles';
 import SwipeableViews from 'react-swipeable-views';
 import AppBar from 'material-ui/AppBar';
 import Tabs, { Tab } from 'material-ui/Tabs';
+import ImgSwiper from '../../components/imgsSwiper';
+import SecondNav from './SecondNav';
+import Divider from 'material-ui/Divider';
 
 function TabContainer({ children, dir }) {
     return (
-        <div dir={dir} style={{ padding: 8 * 3 }}>
+        <div dir={dir}>
             {children}
         </div>
     );
@@ -72,7 +75,11 @@ class FullWidthTabs extends React.Component {
                     index={this.state.value}
                     onChangeIndex={this.handleChangeIndex}
                 >
-                    <TabContainer dir={theme.direction}>Item One</TabContainer>
+                    <TabContainer dir={theme.direction}>
+                        <ImgSwiper/>
+                        <SecondNav/>
+                        <Divider style={{height:8,backgroundColor:'rgba(0, 0, 0, 0.04)'}}/>
+                    </TabContainer>
                     <TabContainer dir={theme.direction}>Item Two</TabContainer>
                     <TabContainer dir={theme.direction}>Item Three</TabContainer>
                     <TabContainer dir={theme.direction}>Item four</TabContainer>
