@@ -7,6 +7,7 @@ import Visibility from 'material-ui-icons/Visibility';
 import Comment from 'material-ui-icons/Comment';
 import Favorite from 'material-ui-icons/Favorite';
 import Avatar from 'material-ui/Avatar';
+import Divider from 'material-ui/Divider';
 import {grey} from 'material-ui/colors';
 
 const styles = {
@@ -106,6 +107,7 @@ function SimpleMediaCard(props) {
                     </CardActions>
                 </div>
             </Card>
+            <Divider />
         </div>
     );
 }
