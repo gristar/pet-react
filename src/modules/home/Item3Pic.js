@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { withStyles } from 'material-ui/styles';
-import Card, { CardActions, CardContent, CardHeader } from 'material-ui/Card';
+import Card, { CardContent, CardHeader } from 'material-ui/Card';
 import Divider from 'material-ui/Divider';
 import ItemFooter from './ItemFooter';
 
@@ -31,7 +31,7 @@ const styles = {
 };
 
 function SimpleMediaCard(props) {
-    const { classes, title, imgs, video } = props;
+    const { classes, title, imgs, video, viewCount, commentCount, likeCount, userName } = props;
     let media = null;
     if(imgs) {
         media = <div>
@@ -54,7 +54,12 @@ function SimpleMediaCard(props) {
                 <CardContent className={classes.content}>
                     {media}
                 </CardContent>
-                <ItemFooter/>
+                <ItemFooter
+                    viewCount={viewCount}
+                    commentCount={commentCount}
+                    likeCount={likeCount}
+                    userName={userName}
+                />
             </Card>
             <Divider />
         </div>
