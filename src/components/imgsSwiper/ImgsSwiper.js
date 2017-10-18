@@ -58,7 +58,7 @@ class Swiper extends React.Component {
                     <ImgContainer dir={theme.direction} src='https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1507886499572&di=8f3466cece6754d0f1146586b9769835&imgtype=0&src=http%3A%2F%2Fimgsrc.baidu.com%2Fimgad%2Fpic%2Fitem%2Fb58f8c5494eef01fd695b3fcebfe9925bc317d02.jpg' />
                     <ImgContainer dir={theme.direction} src='https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1507886499570&di=ff90c4507b63ec7a9ac64ac89539228e&imgtype=0&src=http%3A%2F%2Fimgsrc.baidu.com%2Fimgad%2Fpic%2Fitem%2Ff703738da97739126c6dae5bf3198618367ae245.jpg' />
                 </AutoPlaySwipeableViews>
-                <Pagination dots={3} index={this.state.index} onChangeIndex={this.handleChangeIndex}/>
+                <Pagination dots={5} index={this.state.index} onChangeIndex={this.handleChangeIndex}/>
             </div>
         )
     }
