@@ -52,11 +52,11 @@ class Swiper extends React.Component {
                     index={this.state.index}
                     onChangeIndex={this.handleChangeIndex}
                 >
-                    <ImgContainer dir={theme.direction} src='https://www.baidu.com/img/bd_logo1.png' />
-                    <ImgContainer dir={theme.direction} src='https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=2952479794,1134612206&fm=200&gp=0.jpg' />
-                    <ImgContainer dir={theme.direction} src='https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1507886499572&di=27d5e6d88779752ec5292145ef4fcabc&imgtype=0&src=http%3A%2F%2Fimgsrc.baidu.com%2Fimgad%2Fpic%2Fitem%2F730e0cf3d7ca7bcb1d35d215b5096b63f624a8b9.jpg' />
-                    <ImgContainer dir={theme.direction} src='https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1507886499572&di=8f3466cece6754d0f1146586b9769835&imgtype=0&src=http%3A%2F%2Fimgsrc.baidu.com%2Fimgad%2Fpic%2Fitem%2Fb58f8c5494eef01fd695b3fcebfe9925bc317d02.jpg' />
-                    <ImgContainer dir={theme.direction} src='https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1507886499570&di=ff90c4507b63ec7a9ac64ac89539228e&imgtype=0&src=http%3A%2F%2Fimgsrc.baidu.com%2Fimgad%2Fpic%2Fitem%2Ff703738da97739126c6dae5bf3198618367ae245.jpg' />
+                    <ImgContainer dir={theme.direction} src='http://img.zcool.cn/community/0172725563c7db0000009af098adf9.jpg@2o.jpg' />
+                    <ImgContainer dir={theme.direction} src='http://img.zcool.cn/community/018ce6570a0c9d32f8751b3fbbb583.jpg@2o.jpg' />
+                    <ImgContainer dir={theme.direction} src='http://pic.90sjimg.com/back_pic/qk/back_origin_pic/00/03/76/26666f43efae2da0cc60298eaef525bc.jpg' />
+                    <ImgContainer dir={theme.direction} src='http://pic.90sjimg.com/back_pic/qk/back_origin_pic/00/04/22/a28a3f189228ba814b55d6d875cf9945.jpg' />
+                    <ImgContainer dir={theme.direction} src='http://pic.90sjimg.com/back_pic/qk/back_origin_pic/00/02/31/d8319b151dff92f7d5db3f9bc1d3cc6b.jpg' />
                 </AutoPlaySwipeableViews>
                 <Pagination dots={5} index={this.state.index} onChangeIndex={this.handleChangeIndex}/>
             </div>
