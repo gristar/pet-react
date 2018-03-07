@@ -25,7 +25,6 @@ const styles = {
     icon: {
         width: 28,
         height: 28,
-        marginBottom: 6,
     },
 };
 
